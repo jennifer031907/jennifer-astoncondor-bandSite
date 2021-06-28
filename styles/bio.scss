@@ -30,13 +30,23 @@
   }
 }
 
-.section1__container {
-  & img {
-    width: 100%;
+.section1 {
+  padding-top: 1.4em;
+
+  & h2 {
+    margin: 0;
+    line-height: 2.2em;
   }
 
-  & h3 {
-    margin-top: 0.5rem;
+  &__container {
+    & img {
+      width: 100%;
+    }
+
+    & h3 {
+      margin-top: 1.5rem;
+      line-height: 1.5em;
+    }
   }
 }
 
@@ -135,13 +145,21 @@
     top: 22%;
   }
 
-  .section1 div h3 {
-    width: 81%;
-    font-size: 2.7em;
+  .section1 {
+    div {
+      & img {
+        margin-bottom: 3.5rem;
+      }
 
-    &:last-child {
-      font-family: "demi";
-      font-size: 2em;
+      & h3 {
+        width: 81%;
+        font-size: 2.7em;
+
+        &:last-child {
+          font-family: "demi";
+          font-size: 2em;
+        }
+      }
     }
   }
 
