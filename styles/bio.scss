@@ -65,7 +65,6 @@
 }
 
 .section4 {
-  margin-bottom: 1.6em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -81,12 +80,9 @@
   }
 
   &--userPicture {
+    margin-top: 2.7em;
     justify-items: flex-start;
     @include avatar;
-
-    &1 {
-      margin-top: 2.7em;
-    }
   }
 
   &__form {
@@ -149,39 +145,53 @@
   }
 
   &__comments {
-    margin-top: $paddingTop-mobile;
-    border-top: $divideLine;
+  }
+}
+
+.line {
+  @include dividerLine;
+}
+
+.comment__box {
+  display: flex;
+}
+
+.user {
+  &__form {
+    width: 90%;
+  }
+
+  &__info {
+    margin: 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    margin: 1% 0 0.2em 0;
+    width: fit-content;
+  }
+
+  &__date {
+    margin-bottom: 0.2em;
+    width: fit-content;
+    color: $primaryColor-2;
   }
 
   &__comment {
+    line-height: 1.5em;
+  }
+
+  &__box {
+    margin: 0;
     display: flex;
-    border-bottom: $divideLine;
+    flex-direction: column;
+  }
 
-    &--box {
-      padding-left: 1.6em;
-      width: fit-content;
-    }
-
-    &--titles {
-      margin: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &--name {
-      width: fit-content;
-    }
-
-    &--date {
-      width: fit-content;
-      color: $primaryColor-2;
-    }
-
-    &--paragraph {
-      margin-top: 0;
-      line-height: 1.5em;
-    }
+  &__first-line {
+    display: flex;
   }
 }
 
